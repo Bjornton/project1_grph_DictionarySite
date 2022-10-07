@@ -1,0 +1,142 @@
+body {
+    background-color: lightseagreen;
+}
+
+a {
+    color: black;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background-color: palevioletred;
+    color: #ffffff;
+}
+
+.nav {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+}
+
+a {
+    margin-left: 30px;
+}
+
+#Budapest {
+    width: 25%;
+}
+
+.definition {
+    display: flex;
+    margin-right: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.aboutinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutinfo p {
+    padding: 100px;
+}
+
+.WorkMain {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    background-color: lightpink;
+    color: #ffffff;
+}
+
+.WorkMain img {
+    width: 1200px;
+    height: 225px;
+}
+
+.WorkMain h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.WorkMain div {
+    display: flex;
+}
+
+.WorkMain a {
+    margin-top: 100px;
+    margin-left: 40px;
+    color: black;
+}
+
+.Work {
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    background-color: lightpink;
+    color: #ffffff;
+}
+
+.Work img {
+    width: 550px;
+    height: 225px;
+}
+
+#Work2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Work3 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Work h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.Work div {
+    display: flex;
+}
+
+.Work a {
+    margin-top: 90px;
+    margin-left: 20px;
+    color: black;
+}
+
+.Boxes {
+    display: flex;
+}
+
+.Contact {
+    color: black;
+    font-size: 20px;
+}
+
+.List {
+    color: whitesmoke;
+}
+
+.footer {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background-color: palevioletred;
+    color: #ffffff;
+    text-align: center;
+}
