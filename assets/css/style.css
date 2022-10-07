@@ -1,5 +1,5 @@
 body {
-    background-color: lightseagreen;
+    background-color: lightblue;
 }
 
 a {
@@ -7,15 +7,19 @@ a {
 }
 
 p {
-    color: whitesmoke;
-    font-size: 18px;
+    color: black;
+    font-size: 22px;
 }
 
 .header {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 30px;
+    height: 165px;
     text-align: center;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    background-color: palevioletred;
+    background-color: green;
     color: #ffffff;
 }
 
@@ -29,14 +33,16 @@ a {
     margin-left: 30px;
 }
 
-#Budapest {
-    width: 25%;
+#Friends {
+    width: 50%;
 }
 
-.definition {
+.AboutUs {
+    color: red;
     display: flex;
-    margin-right: 20px;
-    padding: 20px;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding: 5px;
     justify-content: space-between;
 }
 
@@ -48,95 +54,40 @@ a {
 }
 
 .aboutinfo p {
+    color: purple;
     padding: 100px;
 }
 
-.WorkMain {
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
-    height: 300px;
+.Info {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 60px;
+    height: 240px;
+    width: 335px;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    background-color: lightpink;
-    color: #ffffff;
-}
-
-.WorkMain img {
-    width: 1200px;
-    height: 225px;
-}
-
-.WorkMain h2 {
-    margin-top: 10px;
-    font-size: 30px;
-}
-
-.WorkMain div {
-    display: flex;
-}
-
-.WorkMain a {
-    margin-top: 100px;
-    margin-left: 40px;
+    background-color: green;
     color: black;
 }
 
-.Work {
-    margin-bottom: 20px;
-    padding: 10px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    background-color: lightpink;
-    color: #ffffff;
-}
-
-.Work img {
-    width: 550px;
-    height: 225px;
-}
-
-#Work2 {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#Work3 {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.Work h2 {
+.Info h2 {
     margin-top: 10px;
     font-size: 30px;
+    color: whitesmoke;
 }
 
-.Work div {
+.Info div {
     display: flex;
-}
-
-.Work a {
-    margin-top: 90px;
-    margin-left: 20px;
-    color: black;
 }
 
 .Boxes {
     display: flex;
 }
 
-.Contact {
-    color: black;
-    font-size: 20px;
-}
-
-.List {
-    color: whitesmoke;
-}
-
 .footer {
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    background-color: palevioletred;
+    background-color: purple;
     color: #ffffff;
     text-align: center;
 }
