@@ -10,7 +10,7 @@ const randomWord = () => {
         return response.json();
     })
     .then(response => {
-        randomWordBox.textContent = response;;
+        randomWordBox.textContent = response;
         randomDefinition(randomWordBox)
     })
     .catch(err => {
