@@ -13,6 +13,7 @@ const randomWord = () => {
     .then(response => {
         randomWordBox.textContent = response;
         randomDefinition(randomWordBox);
+        //seeha's code 
         var randoWord = response; 
         var picUrl = "https://api.giphy.com/v1/gifs/search?q="+ randoWord +"&limit=1&api_key=xSkUGCs7S67gImimEp1a2QcdCkxxPGKj";
         function createPic(){
@@ -27,6 +28,7 @@ const randomWord = () => {
                 })
         }
         createPic();
+        // seperator
     })
     .catch(err => {
         console.log(err);
@@ -37,15 +39,6 @@ button.addEventListener('click', function(){
     randomWord();
 })
 
-/*
-fetch(picUrl)
-.then(response => {
-return response.json();
-})
-.then(response => {
-randomPic.textContent = response.data[0].url;
-})
-*/
 
 const randomDefinition = (word) => {
     fetch(`https://dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=4c0282a9-8b9b-4d66-9985-0bc2c346b67e`)
