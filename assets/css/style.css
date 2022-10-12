@@ -68,8 +68,13 @@ a {
     margin-left: 10px;
     margin-right: 10px;
     padding: 60px;
+<<<<<<< HEAD
     height: 300px;
     width: 335px;
+=======
+    height: 240px;
+    width: 33%;
+>>>>>>> bfe2e84b488bcdc16204b6e376ae1265c60d0dbc
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     background-color: green;
     color: black;
