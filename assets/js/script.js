@@ -38,3 +38,15 @@ const randomDefinition = (word) => {
 
 randomDefinition();
 
+var apiKey = "https://api.giphy.com/v1/gifs/search?q=school&limit=1&api_key=xSkUGCs7S67gImimEp1a2QcdCkxxPGKj"
+function getapi() {
+    fetch(apiKey)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        })
+}
+
+getapi();
