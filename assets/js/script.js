@@ -38,3 +38,17 @@
 
 //randomDefinition();
 
+var apiKey = "https://api.pexels.com/v1/search/nature"
+function getapi() {
+    fetch(apiKey, {
+        Header: {'Authorization':'563492ad6f917000010000011e3759a10b1d42e8ba6597739c99dda3'}
+    })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        })
+}
+
+getapi();
