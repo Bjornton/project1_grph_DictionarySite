@@ -38,11 +38,9 @@ const randomDefinition = (word) => {
 
 randomDefinition();
 
-var apiKey = "https://api.pexels.com/v1/search/nature"
+var apiKey = "https://api.giphy.com/v1/gifs/search?q=school&limit=1&api_key=xSkUGCs7S67gImimEp1a2QcdCkxxPGKj"
 function getapi() {
-    fetch(apiKey, {
-        Header: {'Authorization':'563492ad6f917000010000011e3759a10b1d42e8ba6597739c99dda3'}
-    })
+    fetch(apiKey)
         .then(function (response) {
             return response.json();
         })
