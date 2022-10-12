@@ -1,9 +1,13 @@
+
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: lightblue;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 a {
@@ -67,7 +71,7 @@ a {
     margin-right: 10px;
     padding: 60px;
     height: 240px;
-    width: 335px;
+    width: 33%;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     background-color: green;
     color: black;

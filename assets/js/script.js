@@ -1,3 +1,5 @@
+//OUr project is awesome
+
 const definition = document.createElement('p');
 const body = document.querySelector('body');
 const button = document.querySelector('button');
@@ -29,6 +31,7 @@ const randomWord = () => {
         }
         createPic();
         // seperator
+        randomDefinition(randomWordBox)
     })
     .catch(err => {
         console.log(err);
