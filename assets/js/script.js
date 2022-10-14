@@ -1,6 +1,6 @@
 const definition = document.createElement('p');
 const body = document.querySelector('body');
-const button = document.querySelector('button');
+const button = document.querySelector('a');
 const randomWordBox = document.getElementById('random-word');
 const randomWordDefinition = document.getElementById('definition-box');
 const randomPic = document.getElementById('word-pic');

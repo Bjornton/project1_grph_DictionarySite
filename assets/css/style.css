@@ -41,6 +41,7 @@ p {
 	font-weight:bold;
 	padding:16px 31px;
 	text-decoration:none;
+    margin: auto;
 }
 .random-word:hover {
 	background-color:oldlace;
