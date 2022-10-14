@@ -1,5 +1,3 @@
-//OUr project is awesome
-
 const definition = document.createElement('p');
 const body = document.querySelector('body');
 const button = document.querySelector('button');
@@ -30,8 +28,7 @@ const randomDefinition = (word) => {
         return response.json();
     })
     .then(response => {
-        console.log(response[0].shortdef);
-        randomWordDefinition.textContent = response[0].shortdef;
+        randomWordDefinition.textContent = response[0].shortdef + ".";
     })
     .catch(err => {
         console.log(err);
