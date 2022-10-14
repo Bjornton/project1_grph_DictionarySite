@@ -42,16 +42,15 @@ button.addEventListener('click', function () {
 
 const randomDefinition = (word) => {
     fetch(`https://dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=4c0282a9-8b9b-4d66-9985-0bc2c346b67e`)
-        .then(response => {
-            return response.json();
-        })
-        .then(response => {
-            console.log(response[0].shortdef);
-            randomWordDefinition.textContent = response[0].shortdef;
-        })
-        .catch(err => {
-            console.log(err);
-        })
+    .then(response => {
+        return response.json();
+    })
+    .then(response => {
+        randomWordDefinition.textContent = response[0].shortdef + ".";
+    })
+    .catch(err => {
+        console.log(err);
+    })
 }
 
 randomDefinition();

@@ -96,6 +96,10 @@ a {
     color: black;
 }
 
+.Info p::first-letter {
+    text-transform: capitalize;
+}
+
 .Info div {
     display: flex;
 }
