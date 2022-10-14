@@ -19,7 +19,7 @@ const randomWord = () => {
             randomDefinition(randomWordBox);
             // code to pull image from word
             var randoWord = response;
-            var picUrl = "https://api.unsplash.com/search/photos/?client_id=SwyjrNoPh-viPjqQBUSi9vocQlzR2z_yQAg86Oj_okU&query=" + randoWord;
+            var picUrl = "https://api.giphy.com/v1/gifs/search?q="+ randoWord +"&limit=1&api_key=xSkUGCs7S67gImimEp1a2QcdCkxxPGKj";
             function createPic() {
                 console.log(picUrl);
                 fetch(picUrl)
@@ -28,18 +28,7 @@ const randomWord = () => {
                     })
                     .then(response => {
                         console.log(response);
-                        if (response.total > 0) {
-                            randomPic.src = response.results[0].urls.small;
-                            img404.textContent = ""
-                        }
-                        else if (reponse = 'undefined') {
-                            randomPic.src = "https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
-                            img404.textContent = "No image found for word :("
-                        }
-                        else {
-                            randomPic.src = "https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
-                            img404.textContent = "No image found for word :("
-                        }
+                        randomPic.src = response.data[0].images.downsized.url;
                     })
             }
             createPic();
