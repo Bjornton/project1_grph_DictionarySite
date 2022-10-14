@@ -9,51 +9,35 @@
 
 <body onload="document.body.style.opacity='1'">
     <header class="header">
+        <h1>Ordbok Word Generator</h1>
         <button>random word</button>
-        <h2>Ordbok</h2>
-        <h2>Word Generator</h2>
-        <h2 id="random-word">*Word*</h2>
-        <img src="" alt="placeholder-picture" id="word-pic">
-        <p id="imgError"></p>
-        <nav class="nav">
-            <a href="#definition">Definition</a>
-            <a href="#synonyms">Synonyms</a>
-            <a href="#antonyms">Antonyms</a>
-        </nav>
+        <h3 id="random-word">*Word generates here*</h3>
     </header>
 
     <section class="AboutUs">
-        <img id="Friends" src="./assets/images/Friends.jpg" alt="Photo from Friends TV show">
+        <img id="K" src="./assets/images/K-definition.jpg">
         <div class="aboutinfo">
-            <p>Ordbok means "dictionary" in Norwegian... but it's not just any boring dictionary. Click the *Word
-                Generator* above to generate a random word and learn its definition, synonyms, and antonyms. You'll be
-                the smartest member of your friend group in no time!
+            <p>Ordbok means "dictionary" in Norwegian... but it's not just any boring dictionary. Click the "random
+                word" button above to generate a random word and learn its definition. If applicable, a relevant gif
+                will also generate to further solidify the definition in your head!
             </p>
         </div>
     </section>
 
     <main>
         <div class="Boxes">
-            <section id="definition" class="Info">
+            <section class="Info">
                 <h2>DEFINITION</h2>
                 <p id="definition-box"></p>
             </section>
 
-            <section id="synonyms" class="Info">
-                <h2>SYNONYMS</h2>
-                <p id="synonyms"></p>
-            </section>
-
-            <section id="antonyms" class="Info">
-                <h2>ANTONYMS</h2>
-                <p id="antonyms"></p>
+            <section class="Info">
+                <h2>IMAGE</h2>
+                <img src="" alt="placeholder" id="word-pic">
             </section>
         </div>
     </main>
 
-    <footer class="footer">
-        <h4>Thanks for visiting Ordbok - do you feel smarter now?</h4>
-    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 
