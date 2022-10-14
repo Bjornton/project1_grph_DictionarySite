@@ -43,9 +43,11 @@ p {
 	text-decoration:none;
     margin: auto;
 }
+
 .random-word:hover {
 	background-color:oldlace;
 }
+
 .random-word:active {
 	position:relative;
 	top:1px;
@@ -77,6 +79,7 @@ a {
 .aboutinfo p {
     color: black;
     padding: 100px;
+    text-align: center;
 }
 
 .Info {
