@@ -14,22 +14,6 @@ const randomWord = () => {
         .then(response => {
             randomWordBox.textContent = response;
             randomDefinition(randomWordBox);
-            var randoWord = response;
-            var picUrl = "https://api.giphy.com/v1/gifs/search?q=" + randoWord + "&limit=1&api_key=xSkUGCs7S67gImimEp1a2QcdCkxxPGKj";
-            function createPic() {
-                console.log(picUrl);
-                fetch(picUrl)
-                    .then(response => {
-                        return response.json();
-                    })
-                    .then(response => {
-                        console.log(response);
-                        randomPic.src = response.data[0].images.downsized.url;
-                    })
-            }
-            createPic();
-            // separator
-            randomDefinition(randomWordBox)
         })
         .catch(err => {
             console.log(err);
@@ -38,6 +22,7 @@ const randomWord = () => {
 
 button.addEventListener('click', function () {
     randomWord();
+    return;
 })
 
 
@@ -48,16 +33,38 @@ const randomDefinition = (word) => {
         })
         .then(response => {
             console.log(response[0].shortdef);
-            randomWordDefinition.textContent = response[0].shortdef;
+            randomWordDefinition.textContent = response[0].shortdef[0];
+            var randoWord = response[0].shortdef[0];
+            var picUrl = "https://api.unsplash.com/search/photos/?client_id=SwyjrNoPh-viPjqQBUSi9vocQlzR2z_yQAg86Oj_okU&query=" + randoWord;
+            function createPic() {
+                console.log(picUrl);
+                fetch(picUrl)
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(response => {
+                        console.log(response);
+                        if(response.results > 0){
+                            randomPic.src = response.results[0].urls.small;
+                        }
+                        else if (reponse = 'undefined') {
+                            randomPic.src="https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
+                        }
+                        else {
+                            randomPic.src="https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
+                        }
+                    })
+            }
+            createPic();
+            // separator
         })
         .catch(err => {
             console.log(err);
         })
 }
 
-randomDefinition();
 
-var apiKey = "https://api.giphy.com/v1/gifs/search?q=school&limit=1&api_key=xSkUGCs7S67gImimEp1a2QcdCkxxPGKj"
+var apiKey = "https://api.unsplash.com/search/photos/?client_id=SwyjrNoPh-viPjqQBUSi9vocQlzR2z_yQAg86Oj_okU&page=1&query=giraffe"
 function getapi() {
     fetch(apiKey)
         .then(function (response) {

@@ -29,6 +29,28 @@ p {
     color: black;
 }
 
+.random-word {
+	background-color: oldlace;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.random-word:hover {
+	background-color:oldlace;
+}
+.random-word:active {
+	position:relative;
+	top:1px;
+}
+
+
 a {
     margin-left: 30px;
 }
@@ -72,6 +94,10 @@ a {
     margin-top: 10px;
     font-size: 30px;
     color: black;
+}
+
+.Info p::first-letter {
+    text-transform: capitalize;
 }
 
 .Info div {
