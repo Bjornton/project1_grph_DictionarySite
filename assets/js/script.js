@@ -34,6 +34,7 @@ const randomDefinition = (word) => {
         .then(response => {
             console.log(response[0].shortdef);
             randomWordDefinition.textContent = response[0].shortdef[0];
+            //seeha code
             var randoWord = response[0].shortdef[0];
             var picUrl = "https://api.unsplash.com/search/photos/?client_id=SwyjrNoPh-viPjqQBUSi9vocQlzR2z_yQAg86Oj_okU&query=" + randoWord;
             function createPic() {
@@ -44,7 +45,7 @@ const randomDefinition = (word) => {
                     })
                     .then(response => {
                         console.log(response);
-                        if(response.results > 0){
+                        if(response.total > 0){
                             randomPic.src = response.results[0].urls.small;
                         }
                         else if (reponse = 'undefined') {
