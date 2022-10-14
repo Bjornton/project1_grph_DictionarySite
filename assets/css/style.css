@@ -1,11 +1,9 @@
-
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: lightblue;
+    background-color: oldlace;
     opacity: 0;
     transition: opacity 3s;
 }
@@ -27,26 +25,41 @@ p {
     height: 100%;
     text-align: center;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    background-color: green;
-    color: #ffffff;
+    background-color: lightblue;
+    color: black;
 }
 
-.nav {
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+.random-word {
+	background-color: oldlace;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
 }
+.random-word:hover {
+	background-color:oldlace;
+}
+.random-word:active {
+	position:relative;
+	top:1px;
+}
+
 
 a {
     margin-left: 30px;
 }
 
-#Friends {
-    width: 50%;
+#K {
+    width: 50.5%
 }
 
 .AboutUs {
-    color: red;
     display: flex;
     margin-left: 5px;
     margin-right: 0px;
@@ -62,25 +75,25 @@ a {
 }
 
 .aboutinfo p {
-    color: purple;
+    color: black;
     padding: 100px;
 }
 
 .Info {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
     padding: 60px;
     height: 240px;
-    width: 33%;
+    width: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    background-color: green;
+    background-color: lightblue;
     color: black;
 }
 
 .Info h2 {
     margin-top: 10px;
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
 }
 
 .Info p::first-letter {
@@ -93,13 +106,4 @@ a {
 
 .Boxes {
     display: flex;
-}
-
-.footer {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    background-color: purple;
-    color: #ffffff;
-    text-align: center;
 }
