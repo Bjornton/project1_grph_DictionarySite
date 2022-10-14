@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Welcome to Ordbok!</title>
 </head>
+<!--Header-->
 
 <body onload="document.body.style.opacity='1'">
     <header class="header">
@@ -13,27 +14,29 @@
         <a href="#" class="random-word">Random Word</a>
         <h3 id="random-word" style="text-transform:capitalize">*Word generates here*</h3>
     </header>
-
+    <!--About the App Section-->
     <section class="AboutUs">
         <img id="K" src="./assets/images/K-definition.jpg">
         <div class="aboutinfo">
             <p>Ordbok means "dictionary" in Norwegian... but it's not just any boring dictionary. Click the "random
-                word" button above to generate a random word and learn its definition. If applicable, a relevant gif
+                word" button above to generate a random word and learn its definition. If applicable, a relevant picture
                 will also generate to further solidify the definition in your head!
             </p>
         </div>
     </section>
 
     <main>
+        <!--Definition Box-->
         <div class="Boxes">
             <section class="Info">
                 <h2>DEFINITION</h2>
                 <p id="definition-box"></p>
             </section>
-
+            <!--Image Box-->
             <section class="Info">
                 <h2>IMAGE</h2>
-                <img src="" alt="placeholder" id="word-pic">
+                <img src="" alt="Search a Word!" id="word-pic">
+                <p id="picerror"></p>
             </section>
         </div>
     </main>
