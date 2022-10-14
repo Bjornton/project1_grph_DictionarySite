@@ -41,6 +41,7 @@ p {
 	font-weight:bold;
 	padding:16px 31px;
 	text-decoration:none;
+    margin: auto;
 }
 .random-word:hover {
 	background-color:oldlace;
@@ -82,7 +83,6 @@ a {
     margin-left: 9px;
     margin-right: 9px;
     padding: 60px;
-    height: 240px;
     width: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     background-color: lightblue;
@@ -105,4 +105,5 @@ a {
 
 .Boxes {
     display: flex;
+    height: 100%;
 }
