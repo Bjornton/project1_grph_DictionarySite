@@ -33,7 +33,7 @@ const randomWord = () => {
                             img404.textContent = "No image found for word :("
                         }
                         else {
-                            randomPic.src = response.data[0].images.downsized.url;
+                            randomPic.src = response.data[0]?.images.downsized.url;
                             img404.textContent = "";
                         }
                     })
