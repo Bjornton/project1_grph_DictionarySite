@@ -17,6 +17,7 @@ p {
     font-size: 22px;
 }
 
+/* Ordbok header */
 .header {
     margin-top: 10px;
     margin-left: 10px;
@@ -29,38 +30,41 @@ p {
     color: black;
 }
 
+/* Random Word button/generator in header */
 .random-word {
-	background-color: oldlace;
-	border-radius:28px;
-	border:1px solid black;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:16px 31px;
-	text-decoration:none;
+    background-color: oldlace;
+    border-radius: 28px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 16px 31px;
+    text-decoration: none;
     margin: auto;
 }
 
 .random-word:hover {
-	background-color:oldlace;
+    background-color: oldlace;
 }
 
 .random-word:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
 a {
     margin-left: 30px;
 }
 
+/* K. Okay but with anger. Image fills 50.5% of screen. */
 #K {
     width: 50.5%
 }
 
+/* "About" section - layout & describing the website */
 .AboutUs {
     display: flex;
     margin-left: 5px;
@@ -78,10 +82,16 @@ a {
 
 .aboutinfo p {
     color: black;
-    padding: 100px;
     text-align: center;
 }
 
+/* Properties of Definition & Image boxes */
+.Boxes {
+    display: flex;
+    height: 100%;
+}
+
+/* Text & image within Definition & Image boxes */
 .Info {
     margin-left: 9px;
     margin-right: 9px;
@@ -106,7 +116,42 @@ a {
     display: flex;
 }
 
-.Boxes {
-    display: flex;
-    height: 100%;
+/* Media queries at 600 px & 375 px */
+@media screen and (max-width: 600px) {
+    .AboutUs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutinfo p {
+        font-size: 15px;
+    }
+
+    .Boxes {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Info {
+        margin: 10px;
+    }
+
+    #word-pic {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .aboutinfo p {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    #word-pic {
+        height: 100%;
+        width: 100%;
+    }
 }

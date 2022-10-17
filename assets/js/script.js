@@ -28,7 +28,7 @@ const randomWord = () => {
                     })
                     .then(response => {
                         console.log(response);
-                        if (response.meta.status != 200 ) {
+                        if (response.meta.status != 200) {
                             randomPic.src = "https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
                             img404.textContent = "No image found for word :("
                         }
