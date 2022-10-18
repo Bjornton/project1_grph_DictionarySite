@@ -147,7 +147,7 @@ a {
     display: flex;
 }
 
-/* Media queries at 600 px & 375 px */
+/* Media queries at 885 px & 375 px */
 @media screen and (max-width: 885px) {
     .AboutUs {
         flex-direction: column;
