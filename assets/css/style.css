@@ -186,42 +186,4 @@ a {
     border-radius: 10px;
     height: 30px;
     margin-bottom: 20px;
-/* Media queries at 600 px & 375 px */
-@media screen and (max-width: 600px) {
-    .AboutUs {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutinfo p {
-        font-size: 15px;
-    }
-
-    .Boxes {
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    .Info {
-        margin: 10px;
-    }
-
-    #word-pic {
-        height: 100%;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .aboutinfo p {
-        font-size: 15px;
-        width: 200px;
-    }
-
-    #word-pic {
-        height: 100%;
-        width: 100%;
-    }
 }
