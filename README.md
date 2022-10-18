@@ -37,7 +37,7 @@
     No installation required.
 
 ## Usage
-Deployed application:
+Deployed application: https://bjornton.github.io/project1_grph_DictionarySite/
 ![Screenshot](assets/images/Ordbok-Screenshot.png)
 
 ## License
