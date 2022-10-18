@@ -26,15 +26,17 @@ const randomWord = () => {
                     .then(response => {
                         return response.json();
                     })
-                    .then(response => {
-                        console.log(response);
-                        if (response.meta.status != 200) {
-                            randomPic.src = "https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
-                            img404.textContent = "No image found for word :("
+                    .then(data => {
+                        console.log(data);
+                        if (data.data[0]?.images.downsized.url) {
+                            console.log("Success");
+                            randomPic.src = data.data[0]?.images.downsized.url;
+                            img404.textContent = ""
                         }
                         else {
-                            randomPic.src = response.data[0]?.images.downsized.url;
-                            img404.textContent = "";
+                            console.log("Failure");
+                            randomPic.src = "https://media0.giphy.com/media/gioXyl9A3eiObmtwKZ/giphy.gif?cid=ecf05e47vedt6wiud3aq4lql2e6856m9dho2rg1he05t6ulo&rid=giphy.gif&ct=g"
+                            img404.textContent = "No image found for word :("
                         }
                     })
             }
@@ -60,7 +62,7 @@ const randomDefinition = (word) => {
             return response.json();
         })
         .then(response => {
-            console.log(response[0].shortdef);
+            console.log(response);
             randomWordDefinition.textContent = response[0].shortdef[0];
         })
         .catch(err => {
