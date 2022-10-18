@@ -186,7 +186,8 @@ a {
     border-radius: 10px;
     height: 30px;
     margin-bottom: 20px;
-/* Media queries at 600 px & 375 px */
+}
+    /* Media queries at 600 px & 375 px */
 @media screen and (max-width: 600px) {
     .AboutUs {
         flex-direction: column;
