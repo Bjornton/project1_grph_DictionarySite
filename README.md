@@ -27,9 +27,9 @@
     THEN I am given information for the word that I have searched
     WHEN I am presented with the information of the word
     THEN I am given the same definition and image columns as the random word function
-    WHEN I click on the search bar again
-    THEN I am presented with all of my past searches
-    WHEN I click on one of the previously searched word
+    WHEN I look below the search bar
+    THEN I am presented with my previous search
+    WHEN I click on my previously searched word
     THEN I can have the website re-search that term
 
 

@@ -61,14 +61,6 @@ a {
     margin-left: 30px;
 }
 
-.header-grid {
-    border: 0px;
-    display: grid;
-    max-width: 600px;
-    margin-top: 20px;
-    
-}
-
 /* Search Bar located in header */
 .search-button{background-color: oldlace;
 	border-radius:28px;
@@ -98,30 +90,12 @@ a {
     
 }
 
-.search-button{background-color: oldlace;
-	border-radius:28px;
-	border:1px solid black;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:16px 31px;
-	text-decoration:none;
-    margin: auto;
-}
-
-.text-bar{    
-    border-radius: 10px;
-    height: 30px;
-    margin-bottom: 20px;
-}
-
+/* Previous search displayed below search bar */
 .prvsSearch{
     margin-top: 5px;
     font-size: 15px;
 }
+
 /* K. Okay but with anger. Image fills 50.5% of screen. */
 #K {
     width: 50.5%
