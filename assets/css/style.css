@@ -148,7 +148,7 @@ a {
 }
 
 /* Media queries at 600 px & 375 px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 885px) {
     .AboutUs {
         flex-direction: column;
         align-items: center;
