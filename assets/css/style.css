@@ -27,6 +27,8 @@ p {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     background-color: lightblue;
     color: black;
+    display: grid;
+    justify-content: center;
 }
 
 .random-word {
@@ -109,4 +111,34 @@ a {
 .Boxes {
     display: flex;
     height: 100%;
+}
+
+
+
+.header-grid {
+    border: 0px;
+    display: grid;
+    max-width: 600px;
+    margin-top: 20px;
+    
+}
+
+.search-button{background-color: oldlace;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: auto;
+}
+
+.text-bar{    
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
 }
