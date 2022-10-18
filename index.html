@@ -16,10 +16,14 @@
         <h1>Ordbok Word Generator</h1>
         <!--Random Word Button-->
         <a href="#" class="random-word">Random Word</a>
-        <!--Where the random word appears on the screen-->
+        <!--Search Feature-->
        <div class ="header-grid"> 
-        <input type="text"class="text-bar" id="search-input" /> 
-            <button id="search-button"class ="search-button">Search</button> </div>
+        <input type="text"class="text-bar" id="search-input"/>
+        <!--Local Storage for last searched word-->
+        <p id="localStorage" class="prvsSearch"> Last Searched word:<a href="#" class="prvsSearch" id="lastSrch"></a> </p>
+            <button id="search-button"class ="search-button">Search</button> 
+        </div>
+                <!--Where the random word appears on the screen-->
         <h3 id="random-word" style="text-transform:capitalize">*Word generates here*</h3>
     </header>
     <!--About the App Section-->

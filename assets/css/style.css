@@ -187,6 +187,11 @@ a {
     height: 30px;
     margin-bottom: 20px;
 }
+
+.prvsSearch{
+    margin-top: 5px;
+    font-size: 15px;
+}
     /* Media queries at 600 px & 375 px */
 @media screen and (max-width: 600px) {
     .AboutUs {

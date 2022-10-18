@@ -8,8 +8,8 @@ const randomPic = document.getElementById('word-pic');
 const img404 = document.getElementById('picerror');
 const searchButton = document.getElementById("search-button")
 const searchInput = document.getElementById("search-input")
+const localStor = document.getElementById('lastSrch')
 
-console.log(searchButton)
 // function to get random Word
 const randomWord = () => {
     fetch('https://random-word-api.herokuapp.com/word?number=1')
@@ -51,7 +51,7 @@ const randomWord = () => {
         })
 }
 
-// button EventListener
+// Random button EventListener
 button.addEventListener('click', function () {
     randomWord();
     return;
@@ -98,9 +98,15 @@ function searchWord(userSearch){
     }
     createPic();
 }
-// button EventListener
+// Local Storage
+localStor.textContent = localStorage.getItem('LastSearch');
+// Search button EventListener
 searchButton.addEventListener('click', function () {
-    searchWord(searchInput.value)
+    searchWord(searchInput.value);
+    localStorage.setItem('LastSearch', searchInput.value);
 
-    
+})
+// Search by last searched word
+localStor.addEventListener('click', function(){
+    searchWord(localStor.textContent);
 })
